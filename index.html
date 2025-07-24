@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Video Editing Portfolio</title>
+  <title>Shaine Maglapuz | Video Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -11,19 +12,22 @@
       box-sizing: border-box;
     }
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
       color: #222;
       line-height: 1.6;
       padding: 2rem;
-      max-width: 800px;
+    }
+    .container {
+      max-width: 900px;
       margin: auto;
     }
     header {
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
+      text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.75rem;
       font-weight: 600;
       margin-bottom: 0.5rem;
     }
@@ -32,61 +36,106 @@
       color: #555;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
     }
     .portfolio-item {
-      margin-bottom: 1.5rem;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform 0.2s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-5px);
     }
     .portfolio-item a {
       font-size: 1.1rem;
+      font-weight: 600;
       color: #007acc;
       text-decoration: none;
+      display: inline-block;
+      margin-bottom: 0.5rem;
     }
-    .portfolio-item a:hover {
-      text-decoration: underline;
+    .portfolio-item p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .tagline {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: #007acc;
+      text-decoration: none;
     }
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #999;
-      margin-top: 3rem;
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Shaine Maglapuz</h1>
-    <p>Video Editor • Media Producer • Storyteller</p>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Shaine Maglapuz</h1>
+      <p>Video Editor • Media Producer • Storyteller</p>
+      <div class="tagline">Turning raw footage into meaningful moments.</div>
+    </header>
 
-  <section>
-    <h2>Selected Work</h2>
-    <div class="portfolio-item">
-      <a href="https://example.com/project1" target="_blank">Lifestyle Coaching Series – Breathwork Highlights</a>
-      <p>A fast-paced, cinematic reel for a male-focused wellness coach. Includes sound design and pacing cuts.</p>
-    </div>
-    <div class="portfolio-item">
-      <a href="https://example.com/project2" target="_blank">Event Aftermovie – Flow State Retreat</a>
-      <p>Crafted a tranquil, emotional aftermovie using voiceovers and ambient music.</p>
-    </div>
-    <div class="portfolio-item">
-      <a href="https://example.com/project3" target="_blank">YouTube Series – Minimalism & Productivity</a>
-      <p>Weekly edits for a creator on intentional living. Maintained brand consistency and subtle transitions.</p>
-    </div>
-  </section>
+    <section>
+      <h2>Selected Work</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <a href="https://example.com/project1" target="_blank">Lifestyle Coaching Series – Breathwork Highlights</a>
+          <p>Fast-paced cinematic reel for a male-focused wellness coach. Includes sound design and pacing cuts.</p>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://example.com/project2" target="_blank">Event Aftermovie – Flow State Retreat</a>
+          <p>Crafted a tranquil, emotional aftermovie using ambient music, voiceovers, and slow transitions.</p>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://example.com/project3" target="_blank">YouTube Series – Minimalism & Productivity</a>
+          <p>Weekly edits for a creator on intentional living. Maintained brand consistency and subtle transitions.</p>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://example.com/project4" target="_blank">Promotional Ad – Coffee Brand Teaser</a>
+          <p>Created a short ad using dynamic text, motion tracking, and moody color grading.</p>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://example.com/project5" target="_blank">Client Testimonial – Service Highlight</a>
+          <p>Edited interview-style content with light animation, SFX, and jump cuts for better engagement.</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  </section>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Shaine Maglapuz</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Shaine Maglapuz</p>
+    </footer>
+  </div>
 </body>
 </html>
