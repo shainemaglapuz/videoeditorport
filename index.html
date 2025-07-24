@@ -4,137 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shaine Maglapuz | Video Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.6;
-      padding: 2rem;
+      background: linear-gradient(-45deg, #fce7f3, #fcd5ce, #fde68a, #e0f2fe);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
     }
-    .container {
-      max-width: 900px;
-      margin: auto;
-    }
-    header {
-      margin-bottom: 4rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.75rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      color: #555;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 2rem;
-    }
-    .portfolio-item {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-      transition: transform 0.2s ease;
-    }
-    .portfolio-item:hover {
-      transform: translateY(-5px);
-    }
-    .portfolio-item a {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #007acc;
-      text-decoration: none;
-      display: inline-block;
-      margin-bottom: 0.5rem;
-    }
-    .portfolio-item p {
-      color: #555;
-      font-size: 0.95rem;
-    }
-    .tagline {
-      font-style: italic;
-      color: #666;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    .contact {
-      text-align: center;
-    }
-    .contact a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #999;
-      margin-top: 4rem;
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <h1>Shaine Maglapuz</h1>
-      <p>Video Editor • Media Producer • Storyteller</p>
-      <div class="tagline">Turning raw footage into meaningful moments.</div>
+<body class="text-gray-800 min-h-screen">
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <header class="text-center mb-16">
+      <h1 class="text-4xl font-bold text-[#b4696a]">Shaine Maglapuz Work Portfolio</h1>
+      <p class="text-lg text-gray-700">Video Editor • Media Producer • Storyteller</p>
+      <p class="italic text-sm mt-2 text-gray-600">Turning raw footage into meaningful moments.</p>
     </header>
 
-    <section>
-      <h2>Selected Work</h2>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <a href="https://example.com/project1" target="_blank">Lifestyle Coaching Series – Breathwork Highlights</a>
-          <p>Fast-paced cinematic reel for a male-focused wellness coach. Includes sound design and pacing cuts.</p>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://example.com/project2" target="_blank">Event Aftermovie – Flow State Retreat</a>
-          <p>Crafted a tranquil, emotional aftermovie using ambient music, voiceovers, and slow transitions.</p>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://example.com/project3" target="_blank">YouTube Series – Minimalism & Productivity</a>
-          <p>Weekly edits for a creator on intentional living. Maintained brand consistency and subtle transitions.</p>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://example.com/project4" target="_blank">Promotional Ad – Coffee Brand Teaser</a>
-          <p>Created a short ad using dynamic text, motion tracking, and moody color grading.</p>
-        </div>
-        <div class="portfolio-item">
-          <a href="https://example.com/project5" target="_blank">Client Testimonial – Service Highlight</a>
-          <p>Edited interview-style content with light animation, SFX, and jump cuts for better engagement.</p>
-        </div>
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold text-[#b4696a] border-b-2 border-[#b4696a] mb-6">Work Portfolio</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center">
+        <a href="https://drive.google.com/drive/folders/1rwfJQAb44hQsSoCKQneYtByySvieqhHO?usp=drive_link" class="bg-white rounded-md shadow p-4 hover:bg-[#b4696a] hover:text-white transition">IG Reels</a>
+        <a href="https://drive.google.com/drive/folders/1LKTjlHJ-hJERt5znk3wKRL9QlbDXbXDb?usp=drive_link" class="bg-white rounded-md shadow p-4 hover:bg-[#b4696a] hover:text-white transition">Vlogs</a>
+        <a href="https://drive.google.com/drive/folders/1cvioGBnkQuRb0t_BpD8wulK7y26L6lSM?usp=drive_link" class="bg-white rounded-md shadow p-4 hover:bg-[#b4696a] hover:text-white transition">Talking Head Videos</a>
+        <a href="https://drive.google.com/drive/folders/11ELxnpK8lg8pmP6vCP0hp6HxKAEzL3Pt?usp=drive_link" class="bg-white rounded-md shadow p-4 hover:bg-[#b4696a] hover:text-white transition">Vertical Videos</a>
+        <a href="https://drive.google.com/file/d/1HsldTvOVb9V_7ZbbaqCGnM-_g-9pLZjY/view?usp=drive_link" class="bg-white rounded-md shadow p-4 hover:bg-[#b4696a] hover:text-white transition">Instructional Material</a>
+        <a href="https://drive.google.com/drive/folders/1fjaG_yxFoe8lmQuELcBDrHSx0N9-51fC?usp=drive_link" class="bg-white rounded-md shadow p-4 hover:bg-[#b4696a] hover:text-white transition">Video Ads</a>
+        <a href="https://drive.google.com/file/d/1KGNq0bErN3ERxCcIhT_IPz9ttYs-IZMC/view?usp=drive_link" class="bg-white rounded-md shadow p-4 hover:bg-[#b4696a] hover:text-white transition">Event Highlights</a>
       </div>
     </section>
 
-    <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold text-[#b4696a] border-b-2 border-[#b4696a] mb-4">Clients</h2>
+      <ul class="list-disc pl-6 text-gray-800">
+        <li>Mathew Fleming</li>
+        <li>NatXEezee</li>
+        <li>SmellyBellyTV</li>
+        <li>Mark Glennon</li>
+        <li>Rebecca Jax</li>
+      </ul>
     </section>
 
-    <footer>
-      <p>&copy; 2025 Shaine Maglapuz</p>
+    <section class="mb-16">
+      <h2 class="text-2xl font-semibold text-[#b4696a] border-b-2 border-[#b4696a] mb-4">Published Work</h2>
+      <ul class="space-y-2 text-gray-800">
+        <li><a href="https://www.youtube.com/@EzeexNataliee" target="_blank" class="text-[#b4696a] hover:underline">YouTube: EzeexNatalie</a></li>
+        <li><a href="https://www.instagram.com/jaxhealingretreat/" target="_blank" class="text-[#b4696a] hover:underline">Instagram: JaxHealingTheGreat</a></li>
+      </ul>
+    </section>
+
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold text-[#b4696a] border-b-2 border-[#b4696a] mb-4">Contact</h2>
+      <p class="text-gray-800">Email: <a href="mailto:sjmaglapuz@gmail.com" class="text-[#b4696a] hover:underline">sjmaglapuz@gmail.com</a></p>
+      <p class="text-gray-800">Contact Me: <a href="https://shainemaglapuz.carrd.co/" class="text-[#b4696a] hover:underline" target="_blank">View my carrd</a></p>
+    </section>
+
+    <footer class="mt-16 text-center text-sm text-gray-600">
+      &copy; 2025 Shaine Maglapuz
     </footer>
   </div>
 </body>
